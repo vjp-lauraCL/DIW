@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Arte</title>
+    <style>
+        .capa{
+            margin: 0;
+            text-align: center;
+            border: 2px solid black;
+            padding: 10px;
+        }
+        #textoUno{
+            text-align: left;
+        }
+        .capaDos{
+           float: left;
+        }
+        .capaTres{
+           float: left;
+        }
+        .capaCuatro{
+           float: left;
+        }
+
+        .capacheck{
+            float: left;
+        }
+        .capaCinco{
+            clear: both;
+        }
+        .capaCinco > p{
+            text-align: left;
+        }
+        #contenedor{
+            display: flex;
+            justify-content: space-around;
+        }
+    </style>
+</head>
+<body>
+    <div class="capa">
+            <h1>Catálogo de Arte</h1>
+            <div id="textoUno">
+                <p>Introduce los términos de búsqueda</p>
+            </div>
+
+            <div id="contenedor">
+                <div class="capaDos">
+                    <h2>Obra</h2>
+                              <form action="post">
+                    <label for="titulo">Titulo</label>
+                    <input type="text" name="titulo" id="titulo"><br>
+                    <label for="autor">Autor</label>
+                    <input type="text" name="autor" id="titulo"> <br>
+                              </form>
+                </div>
+                <div class="capacheck">
+                    <h2>Tipo</h2>
+                    <form action="post">
+                        <input type="checkbox" name="escultura" value="arte">Escultura<br>
+                        <input type="checkbox" name="arquitectura" value="arqueitectura">Arquitectura<br>
+                        <input type="checkbox" name="pintura" value="pintura">Pintura<br>
+                    </form>
+                </div>
+                <div class="capaTres">
+                    <h2>Disponibilidad</h2>
+                    <form action="post">
+                        <input type="radio" name="museo" value="publico">Museo/Acceso Público<br>
+                        <input type="radio" name="accesoPrivado" value="privado">Colección Privada<br>
+                    </form>
+                </div>
+                <div class="capaCuatro">
+                    <h2>Estilo</h2>
+                    <form action="post">
+                        <select>
+                            <option value="clasico">Clásico</option>
+                            <option value="abstracto">Abstracto</option>
+                            <option value="surrealista">Surrealista</option>
+                            <option value="otros">Otros</option>
+                        </select>
+                    </form>
+                </div>
+            </div>         
+            <div class="capaCinco">
+                <p>Háganos saber sus sugerencias</p>
+                <form action="post">
+                    <textarea name="sugerencias" id="sugerencias" cols="40" rows="4"></textarea>
+                </form>
+            </div>
+            <button type="submit">Buscar</button> 
+    </div>
+</body>
+</html>
