@@ -1,0 +1,58 @@
+/*Cambiamos el color del fondo del archivo, luego establecemos el tipo de  fuente que utilizaremos y por 
+Ultimo añadimos un margin*/
+body{
+    background-color: rgb(166, 166, 168);
+    margin: 0, auto;
+    font-family: 'Times New Roman', Times, serif;
+}
+/*Cambia el color el tamaño y la letra del header*/
+header{
+    background-color: violet;
+    color: white;
+    width: 200px;
+}
+/* el color a todos los h3*/
+
+h3{
+    color: crimson;
+}
+/*A todos los h1, h2 y h3 los ponemos una fuente predeterminada y cambiamos su color*/
+h1, h2, h3{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(182, 74, 34);
+}
+/*Eliminamos los puntos de la lista*/
+nav ul li{
+   list-style: none; 
+}
+/*En este selector hemos añadido a las imagenes un border amarillo y un border radius*/
+section div img{
+    border: 1px solid yellow;
+    border-radius: 10px;
+}
+/*A la clase código le hemos añadido un background que hace que resalte nuestro código*/
+.codigo{
+    background-color: sandybrown;
+}
+/*Añadimos un fondo, cambiamos el tamaño del fondo y añadimos un padding*/
+.resumen{
+    background-color: springgreen;
+    width: 300px;
+    padding: 10px;
+}
+/*Cambiamos el color de las letras*/
+#introduccion{
+    color: white;
+    padding: 10px;
+}
+/*Cambiamos el color del hijo y le aumentamos el tamaño*/
+#introduccion p > i{
+    color: rgb(37, 80, 82);
+    font-size: x-large;
+}
+section + h2{
+ font-size: xx-large;
+}
+a[href="mailto:lcaserol01@informatica.iesvalledeljerteplasencia.com"]{
+    color: rgb(97, 16, 2);
+}
