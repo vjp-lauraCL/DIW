@@ -50,7 +50,7 @@ section div img{
     color: rgb(37, 80, 82);
     font-size: x-large;
 }
-section + h2{
+h1+h2{
  font-size: xx-large;
 }
 a[href="mailto:lcaserol01@informatica.iesvalledeljerteplasencia.com"]{
