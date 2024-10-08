@@ -1,0 +1,35 @@
+body{
+    background-color: rgb(150, 112, 97);
+}
+a:link{
+    color: red;
+    text-decoration: none;
+}
+a:visited{/*Se aplica cuando hemos visitado el enlace*/
+    color: rgb(200, 255, 0);
+    text-decoration: none;
+}
+a:hover{/*Puntero sobre el enalce*/
+    color: rgb(123, 123, 194);
+    text-decoration: underline;
+}
+a:active{/*Se aplica cuando estamos pinchando*/
+    color: rgb(217, 123, 230);
+    text-decoration: none;
+}
+a:focus{/*Se aplica cuando el enlace tiene el foco*/
+    color: rgb(107, 183, 245);
+    text-decoration: underline;
+}
+ul :first-child{/*/afecta al primer elemento de la lista*/
+    color: darkolivegreen;
+    list-style: none;
+}
+ul :nth-child(2){/*Afecta al segundo elemento de ul*/
+    color: lightseagreen;
+    list-style: none;
+}
+ul :nth-child(3){
+    color: maroon;
+    list-style: none;
+}
