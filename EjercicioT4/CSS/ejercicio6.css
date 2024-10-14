@@ -1,0 +1,14 @@
+h2::first-letter{
+    font-size:xx-large ; 
+}
+h2+p{
+    text-indent: 2em;
+}
+ abbr::after{
+    content:attr(title);
+    margin-left: 5px;
+    font-style: italic;
+}
+a::before{
+    content: "->";
+}
