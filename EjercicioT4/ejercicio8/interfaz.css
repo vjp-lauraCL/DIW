@@ -1,6 +1,47 @@
 body{
    background-image:url(img/Fondo.jpg); 
 }
-head{
-    background-image: url(img/logo.png);
+/* Añade este CSS a tu archivo de estilos */
+.header-contenedor {
+    display: flex; /* Activa flexbox */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: start; /* Alinea el contenido al inicio verticalmente */
+    width: 100%; /* Opcional: asegura que el contenedor ocupe todo el ancho disponible */
+}
+form{
+    background-color: rgb(202, 197, 197);
+    width: 350px;
+    height: 200px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+p{
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+label{
+    color: grey;  
+    
+}
+input{
+    margin-bottom: 10px;
+}
+
+.idiomas-container {
+    text-align: center; /* Centra el contenido */
+  }
+  
+  .idiomas-container p {
+    display: inline-block; /* Alinea los párrafos (y por ende los enlaces) uno al lado del otro */
+    margin-right: 10px; /* Añade un espacio entre los enlaces */
+    margin-top: 5px; /* Añade un espacio entre los enlaces */
+  }
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: rgb(199, 198, 198);
+    text-align: center;
 }

@@ -7,9 +7,12 @@
     <link rel="stylesheet" href="interfaz.css">
 </head>
 <body>
-    <h1>Introduzca su correo(UEx) y Contraseña.</h1>
-    <hr>
+    <div class="header-contenedor">
+        <h1><img src="img/logo.png" alt=""></h1>
+    </div>
     <form action="">
+        <p>Introduzca su correo (UEx) y Contraseña</p>
+        <hr>
         <label for="identificador">Identificador de correo (UEx): </label><br>
         <input type="text" name="identificador" id="identificador">
         <br>
@@ -19,14 +22,15 @@
         <input type="submit" value="INICIAR SESIÓN">
         <input type="submit" value="LIMPIAR ">
     </form>
-    <div>
-        <h2>Idiomas:</h2>
-        <p> <a href="#">English</a></p>
-        <p><a href="#">Spanish</a></p>
-        <p><a href="#">French</a></p>
-        <p><a href="#">Portuguese</a></p>
-        <p>Si tienes cualquier incidencia, contacte por favor con el <a href="#">Servicio de Apoyo de Docentes</a>. Si ha olvidado su contraseña puede cambiarla haciendo click en uno de estos enlaces según su tipo <a href="#">@unex.es</a>| <a href="#">@alumnos.unex.es.</a> </p>
-    </div>
+    
+        <div class="idiomas-container">
+            <h2>Idiomas:</h2>
+            <p> <a href="#">English</a></p>
+            <p><a href="#">Spanish</a></p>
+            <p><a href="#">French</a></p>
+            <p><a href="#">Portuguese</a></p>
+        </div>
+        <p>Si tienes cualquier incidencia, contacte por favor con el <a href="#">Servicio de Apoyo de Docentes</a>. Si ha olvidado su contraseña puede cambiarla haciendo click en uno de estos enlaces según su tipo <a href="#">@unex.es</a>|<a href="#">@alumnos.unex.es.</a></p>
 <footer>
     <p>Copyright 2005 - 2012 Jasig, Inc.All rights reserved</p>
 </footer>
