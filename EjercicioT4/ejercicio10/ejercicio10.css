@@ -1,0 +1,28 @@
+header{
+    background-image: url(Patrones/bg_verde.png);
+    margin: 0 auto;
+    height: 220px;
+}
+header > img{
+    padding: 20px;
+}
+ ul > li{
+    display: inline;
+    color: white;
+    padding: 10px;
+   text-transform: uppercase;
+}
+#iniciarSesion{
+    text-align: right;
+    float: right;
+}
+hr{
+    border: 1px dashed white;
+}
+form{
+    background-color: rgb(218, 214, 214);
+}
+.imagenes{
+    padding: 10px;
+    background-image: url(Patrones/bg_gris.png);
+}
