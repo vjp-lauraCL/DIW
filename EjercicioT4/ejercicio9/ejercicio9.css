@@ -1,0 +1,8 @@
+div{
+    background-color: darkgrey;
+    width: 400px;
+    height: 50px;    
+}
+span{
+    justify-content: space-between;
+}
