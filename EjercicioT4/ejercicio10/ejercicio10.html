@@ -1,48 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es"> <!-- Cambiado el atributo lang a "es" para reflejar el idioma español -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página web</title>
+    <script src="https://kit.fontawesome.com/fd7ff30691.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="ejercicio10.css">
 </head>
 <body>
 <header>
     <img src="Logos/logo.png" alt="cabecera">
+    <i class="fa-brands fa-square-tumblr"></i>
+    <i class="fa-brands fa-instagram"></i>
+    <i class="fa-brands fa-square-facebook"></i>
     <hr>
     <div>
         <ul>
-            <li><a href="#"></a>Inicio</li>
-            <li><a href="#"></a>Preguntas frecuentes</li>
-            <li><a href="#"></a>Acerca de</li>
-            <li id="iniciarSesion"><a href="#"></a>Iniciar sesión</li>
+            <li>Inicio</li>
+            <li>Preguntas frecuentes</li>
+            <li>Acerca de</li>
+            <li id="iniciarSesion">Iniciar sesión</li>
         </ul>
     </div>
-    <hr>
 </header>
-   
-        
+<hr>
+      
     <form action="">
-        <p>Inciar sesión</p>
+        <p>Inicio &raquo; Iniciar Sesión</p>
+        <p id="mayusculas">Iniciar sesión</p> 
         <hr>
         <p>IMPORTANTE: Para iniciar sesión en el Portal MásCVUEx su nombre de usuario es su dirección de Email completa.</p>
-        <label for="correo">Correo Electronico </label>
+        <label for="correo">Correo Electrónico </label> <br>
         <input type="email" name="correo" id="correo" required>
-        <p>Escribe su nombre de usuario en Más CVUEx</p>
-        <label for="contraseña">Contraseña </label>
+        <p>Escribe tu nombre de usuario en Más CVUEx</p> <!-- Cambiado "su" por "tu" para mantener la consistencia -->
+        <label for="contraseña">Contraseña </label><br>
         <input type="password" name="contraseña" id="contraseña" required>
-        <p>Escribe la contraseña asignada a su nombre de usuario.</p>
+        <p>Escribe la contraseña asignada a tu nombre de usuario.</p> <!-- Cambiado "su" por "tu" para mantener la consistencia -->
 
         <input type="submit" value="Entrar">
     </form>
-    <div class="imagenes">
+    <footer>
         <img src="Logos/CVUEX_Footer.png" alt="imagen1">
-        <img src="Logos/DIPCC_Footer.png" alt="imagen2">
-        <img src="Logos/EmprendedorExt_Footer.png" alt="imagenes3">
-        <img src="Logos/UEx_Footer.png" alt="">
-    </div>
-  <footer>
-    <p>Campus Virtual de la UEx - Vicerrectorado de Universidad Digital - Universidad de Extremadura</p>
+        <img src="Logos/UEx_Footer.png" alt="imagen2">
+        <img src="Logos/DIPCC_Footer.png" alt="imagen3">
+        <img src="Logos/EmprendedorExt_Footer.png" alt="imagen4">
+        <hr>
+        <p>Campus Virtual de la UEx - Vicerrectorado de Universidad Digital - Universidad de Extremadura</p>
   </footer>
 </body>
 </html>

@@ -1,28 +1,76 @@
-header{
+body{
+    margin: auto;
+}
+header {
     background-image: url(Patrones/bg_verde.png);
     margin: 0 auto;
-    height: 220px;
+    height: 240px;
+    width: 100%; /* Asegura que el fondo verde cubra todo el ancho */
 }
-header > img{
+header > img {
     padding: 20px;
 }
- ul > li{
+i{
+    float: right;
+    padding: 5px;
+}
+
+ul {
+    padding: 10; /* Elimina el padding por defecto de la lista */
+    margin: 0; /* Elimina el margen por defecto de la lista */
+    list-style-type: none; /* Elimina los bullets de la lista */
+    display: flex; /* Usa flexbox para alinear los elementos de la lista */
+    justify-content: space-between; /* Distribuye el espacio entre los elementos de la lista */
+}
+ul > li {
     display: inline;
     color: white;
     padding: 10px;
-   text-transform: uppercase;
+    text-transform: uppercase;
+    font-size: small;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-#iniciarSesion{
+#iniciarSesion {
     text-align: right;
-    float: right;
+    margin-left: auto; /* Alinea Iniciar Sesión a la derecha */
 }
-hr{
+hr {
     border: 1px dashed white;
 }
-form{
+form {
     background-color: rgb(218, 214, 214);
-}
-.imagenes{
     padding: 10px;
+    width: 1880px;
+    height: 410px;
+    margin-left: 20px;
+    margin-bottom: 50;
+    border-radius: 10px;
+
+}
+form p {
+    font-size: small;
+}
+#mayusculas{
+    font-size:  large;
+}
+footer {
     background-image: url(Patrones/bg_gris.png);
+    position: absolute; /* Cambiado a absolute para permitir que esté al final del contenido */
+    bottom: 0; /* Alinea el footer al fondo de la página */
+    width: 100%; /* Asegura que el fondo gris cubra todo el ancho */
+    height: 220px;
+    text-align: center;
+    padding: 5px;
+}
+footer p {
+    color: white;
+}
+footer img {
+   padding: 20px;
+   margin-right: 30px;
+}
+
+footer img:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s;
 }
