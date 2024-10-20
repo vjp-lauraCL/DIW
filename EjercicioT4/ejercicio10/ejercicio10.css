@@ -1,3 +1,33 @@
+@media (max-width: 480px) {
+    header {
+        height: auto; /* Ajusta la altura automáticamente */
+    }
+
+    header > img {
+        width: 100%; /* Asegura que la imagen se ajuste al ancho del contenedor */
+        height: auto; /* Mantiene la proporción de la imagen */
+    }
+
+    ul > li {
+        padding: 3px;
+        font-size: small;
+    }
+
+    form {
+        padding: 5px;
+        margin: 5px;
+    }
+
+    footer {
+        height: auto;
+    }
+
+    footer img {
+        margin: 5px;
+        width: 100%; /* Asegura que las imágenes se ajusten al ancho del contenedor */
+    }
+}
+
 body {
     background-color: rgb(245, 245, 225);
     margin: auto;
@@ -15,6 +45,8 @@ header {
 
 header > img {
     padding: 20px;
+    max-width: 100%; 
+    height: auto; 
 }
 
 i {
@@ -24,11 +56,11 @@ i {
 }
 
 ul {
-    padding: 10; /* Elimina el padding por defecto de la lista */
-    margin: 0; /* Elimina el margen por defecto de la lista */
-    list-style-type: none; /* Elimina los bullets de la lista */
-    display: flex; /* Usa flexbox para alinear los elementos de la lista */
-    justify-content: space-between; /* Distribuye el espacio entre los elementos de la lista */
+    padding: 10px; 
+    margin: 0; 
+    list-style-type: none; 
+    display: flex; 
+    justify-content: space-between; 
 }
 
 ul > li {
@@ -42,7 +74,7 @@ ul > li {
 
 #iniciarSesion {
     text-align: right;
-    margin-left: auto; /* Alinea Iniciar Sesión a la derecha */
+    margin-left: auto; 
 }
 
 hr {
@@ -53,12 +85,14 @@ hr {
 form {
     background-color: rgb(218, 214, 214);
     padding: 10px;
-    width: 100%; /* Ajusta el ancho del form */
-    max-width: 1880px; /* Asegura que el form no sea más ancho que 1880px */
-    height: 410px;
-    margin: 10px 20px; /* Ajusta los márgenes */
+    width: 90%; 
+    max-width: 800px; /* Asegura que el form no sea más ancho que 800px */
+    height: auto; 
+    max-height: 90vh; 
+    margin: 10px auto;
     border-radius: 10px;
     flex: 1; /* Permite que el form crezca para llenar el espacio disponible */
+    overflow-y: auto;
 }
 
 form p {
@@ -71,20 +105,34 @@ form p {
 
 footer {
     background-image: url(Patrones/bg_gris.png);
-    width: 100%; /* Asegura que el fondo gris cubra todo el ancho */
-    height: 220px;
+    width: 100%; 
+    height: auto; 
     text-align: center;
     padding: 5px;
-    margin-top: auto; /* Empuja el footer al final del body */
+    margin-top: auto; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
 }
 
 footer p {
     color: white;
+    width: 100%; 
+    text-align: center; 
+}
+
+footer .footer-images {
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap;
+    width: 100%; 
 }
 
 footer img {
     padding: 20px;
-    margin-right: 30px;
+    margin: 10px; 
+    width: auto; 
+    max-width: 100px; 
 }
 
 footer img:hover {
