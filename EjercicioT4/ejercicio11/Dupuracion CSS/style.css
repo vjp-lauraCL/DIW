@@ -1,0 +1,59 @@
+/* General styles */
+html{
+  font-size: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  width: 80em;
+  margin: 0 auto;
+}
+
+/* Typography */
+
+h1 {
+  text-align: center;
+  font-size: 4em;
+  padding: 0.5em 0;
+}
+
+h2 {
+  font-size: 3.2em;
+}
+
+p{
+  padding-top: 1em;
+  font-size: medium;
+  font-family: Arial, Helvetica, sans-serif;
+}
+li {
+  font-size: medium;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*+++ more specific section styles +++*/
+
+/* header and footer */
+
+header, footer {
+  background-color: teal;
+  height: 10em;
+  padding: 2em;
+}
+
+
+
+/* main content */
+
+main {
+  padding: 2em;
+}
+
+main ,li {
+  line-height: 2;
+}
+
+ img {
+  float: right;
+  margin: 1.2em 2em;
+  width: 200px;
+} 
