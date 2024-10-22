@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,31 +10,38 @@
 <body>
     <div class="contenedor">
         <form action="">
-           <h1><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Joomla%21-Logo.svg/2560px-Joomla%21-Logo.svg.png" alt="joomla!"></h1>
-            
-                <div id="usuario">
-                    <i class="fa-solid fa-user"></i>
-                    <input type="text" placeholder="Usuario" name="usuario" > <i class="fa-solid fa-circle-question"></i><br>
-                </div>
-                <div id="contraseña"><i class="fa-solid fa-lock"></i><input type="text" placeholder="Contraseña" name="contraseña"><i class="fa-solid fa-circle-question"></i><br></div>
-                <div id="idioma">
-                    <i class="fa-solid fa-message"></i><select name="idioma">
-                                <option value="defecto">Idioma-Predeterminado</option>
-                                <option value="es-ES">Español</option>
-                                <option value="en-GB">Inglés</option>
-                                <option value="de-DE">Alemán</option>
-                                <option value="fr-FR">Francés</option>
-                                <option value="it-IT">Italiano</option>
-                              </select><br>
-                </div>
-            <input type="submit" value="Conectar">
+            <h1><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Joomla%21-Logo.svg/2560px-Joomla%21-Logo.svg.png" alt="joomla!"></h1>
+            <div class="form-group">
+                <i class="fa-solid fa-user"></i>
+                <input type="text" placeholder="Usuario" name="usuario">
+                <i class="fa-solid fa-circle-question"></i>
+            </div>
+            <div class="form-group">
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" placeholder="Contraseña" name="contraseña">
+                <i class="fa-solid fa-circle-question"></i>
+            </div>
+            <div class="form-group">
+                <i class="fa-solid fa-message"></i>
+                <select name="idioma">
+                    <option value="defecto">Idioma-Predeterminado</option>
+                    <option value="es-ES">Español</option>
+                    <option value="en-GB">Inglés</option>
+                    <option value="de-DE">Alemán</option>
+                    <option value="fr-FR">Francés</option>
+                    <option value="it-IT">Italiano</option>
+                </select>
+                <i class="fa-solid fa-circle-question"></i>
+            </div>
+            <button type="submit">
+                <i class="fa-solid fa-lock"></i> Conectar
+            </button>
         </form>
     </div>
     <footer>
-        <p><a href="#">Ir a la página del sitio</a></p>
+        <p> <i class="fa-solid fa-up-right-from-square"></i><a href="#">Ir a la página del sitio</a></p>
         <i class="fa-brands fa-joomla"></i>
-        <p id="">2018 IES Valle del Jerte - Plasencia</p>    
+        <p class="year">2018 IES Valle del Jerte - Plasencia</p>
     </footer>
-    
 </body>
 </html>
